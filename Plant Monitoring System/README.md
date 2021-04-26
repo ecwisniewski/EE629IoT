@@ -1,6 +1,6 @@
-# EE629IoT
-Repositiory for IoT class projects and materials
+# Plant Monitoring System
+## Final Project EE629IoT
+Repositiory for final project Plant Monitoring System, code and data.
 
-### Weekly
-* Week 0 - Introduction
-* Week 1 - Labs
+### Description
+
