@@ -7,8 +7,8 @@
 * Test with other GPIO pins/options like from class
 * Test with more LEDs
 * Picture:
-![Console Output](/images/bluetoothdemooutput.png)
-![LED Setup](/images/20210428_145908.jpg)
+![Console Output](https://github.com/errski/EE629IoT/blob/main/Example%20Demo%20Code/images/bluetoothdemooutput.png)
+![LED Setup](https://github.com/errski/EE629IoT/blob/main/Example%20Demo%20Code/images/20210428_145908.jpg)
 
 
 ### 2. Database Demos
