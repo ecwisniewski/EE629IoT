@@ -2,5 +2,5 @@
 Repositiory for IoT class projects and materials
 
 ### Weekly
-* Week 0 - Introduction
-* Week 1 - Labs
+* 5/3 Demos for interested topics relating to project
+* Project Design
