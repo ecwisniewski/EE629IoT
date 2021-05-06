@@ -18,3 +18,4 @@
 
 ### 3. Other
 
+* Test MCP3008: using adafruit-blinka
