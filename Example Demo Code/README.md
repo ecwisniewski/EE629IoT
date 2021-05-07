@@ -19,3 +19,6 @@
 ### 3. Other
 
 * Test MCP3008: using adafruit-blinka
+* Adafruit Hum and Temp Sensor: [Tutorial](https://www.electronicshub.org/raspberry-pi-dht11-humidity-temperature-sensor-interface/)
+
+![Hum Temp Sensor](https://github.com/errski/EE629IoT/blob/main/Example%20Demo%20Code/images/humtemp_sensor.png)
