@@ -18,7 +18,7 @@
 * [Display Table Data Tutorial](https://www.siteground.com/tutorials/php-mysql/display-table-data/)
 * PHP
 ![Display Test Input](https://github.com/errski/EE629IoT/blob/main/Example%20Demo%20Code/images/displayinput.png)
-![Display Test Database](https://github.com/errski/EE629IoT/blob/main/Example%20Demo%20Code/images/displaydboutput.png)
+![Display Test Database](https://github.com/errski/EE629IoT/blob/main/Example%20Demo%20Code/images/displaydboutput2.png)
 
 ### 3. Other
 
