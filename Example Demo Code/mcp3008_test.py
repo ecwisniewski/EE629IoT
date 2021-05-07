@@ -33,18 +33,33 @@ print('ADC Voltage: ', str(chan0.voltage)+'V')
 
 while True:
 	try:
-		print("ADC Photosensor Value: "+str(chan0.value))
+		photosensor = chan0.value
+		moisture = chan1.value
+		temp = chan2.value
+		print()
+		print("ADC Photosensor Value: "+str(photosensor))
 		#print("ADC Voltage: "+str(chan0.voltage)+"V")
-		print("Photosensor: "+str(chan0.value/1024))
+		print("Photosensor: "
+		R = 10
+		places = 2
+		volts = (photosensor * 3.3) / 1023
+		volts = round(volts, places)
+		print('volts = ', volts)
+		if volts == 0:
+		    lux = 0
+		else:
+		    lux = 500 * (3.3 - volts) / (R * volts)
+		print('lux = ', lux)
+		#print("Photosensor: "+str(photosensor/1023))
 		#print("Digital GPIO: "+str(GPIO.input(27)))
-
-		print("ADC Moistur Sens: "+str(chan1.value))
+		print()
+		print("ADC Moistur Sens: "+str(moisture))
 		#print("ADC Voltage: "+str(chan1.value))
-		print("Moisture: "+str(chan1.value/1024))
+		print("Moisture: "+str(moisture/1023))
 		#print("Digital GPIO moist: "+str(GPIO.input(17)))
-
-		print("ADC Temp Sens: " +str(chan2.value))
-		print("Temp: "+str(chan2.value/1024))
+		print()
+		print("ADC Temp Sens: " +str(temp))
+		print("Temp: "+str(temp/1023))
 		#print("ADC Voltage: "+str(chan2.value))
 		time.sleep(20)
 	except KeyboardInterrupt:
