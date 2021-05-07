@@ -1,3 +1,4 @@
+<!-- https://www.siteground.com/tutorials/php-mysql/display-table-data/ -->
 <?php
 $username = "pi";
 $password = "password"; // not a real password
