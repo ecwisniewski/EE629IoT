@@ -32,17 +32,21 @@ print('Raw ADC value: ', chan0.value)
 print('ADC Voltage: ', str(chan0.voltage)+'V')
 
 while True:
-	print("ADC Photosensor Value: "+str(chan0.value))
-	print("ADC Voltage: "+str(chan0.voltage)+"V")
-	print("Photosensor: "+str(chan0.value/1024))	
-	print("Digital GPIO: "+str(GPIO.input(27)))
+	try:
+		print("ADC Photosensor Value: "+str(chan0.value))
+		#print("ADC Voltage: "+str(chan0.voltage)+"V")
+		print("Photosensor: "+str(chan0.value/1024))
+		#print("Digital GPIO: "+str(GPIO.input(27)))
 
-	print("ADC Moistur Sens: "+str(chan1.value))
-	print("ADC Voltage: "+str(chan1.value))
-	print("Moisture: "+str(chan1.value/1024))
-	print("Digital GPIO moist: "+str(GPIO.input(17)))
-	
-	print("ADC Temp Hum Sens: " +str(chan2.value))
-	print("HUM: "+str(chan2.value/1024))
-	print("ADC Voltage: "+str(chan2.value))
-	time.sleep(3)
+		print("ADC Moistur Sens: "+str(chan1.value))
+		#print("ADC Voltage: "+str(chan1.value))
+		print("Moisture: "+str(chan1.value/1024))
+		#print("Digital GPIO moist: "+str(GPIO.input(17)))
+
+		print("ADC Temp Sens: " +str(chan2.value))
+		print("Temp: "+str(chan2.value/1024))
+		#print("ADC Voltage: "+str(chan2.value))
+		time.sleep(20)
+	except KeyboardInterrupt:
+		GPIO.cleanup()
+		exit()
