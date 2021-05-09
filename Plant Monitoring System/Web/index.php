@@ -20,13 +20,16 @@
       $database = "test";
 
       $mysqli = new mysqli("localhost", $username, $password, $database);
-      $query = "SELECT * FROM testtable";
-      $firstrow = $result->fetch_assoc();
+      $query = "SELECT * FROM testtable order by tdate desc limit 1";
+      if ($result=$mysqli->query($query)) {
+        $lastrow = $result->fetch_assoc();
+        $dispmoisture = $lastrow["moisture"];
+        $displight = $lastrow["light"];
+        $disptempurature = $lastrow["temperature"];
+        $disphumidity = $lastrow["humidity"];
+        $result->free();
+      }
 
-      $dispmoisture = $firstrow["moisture"]
-      $displight = $firstrow["light"]
-      $disptempurature = first$row["temperature"]
-      $disphumidity = $firstrow["humidity"]
     ?>
 
     <div class="title">
@@ -94,6 +97,7 @@
 
 
       <?php
+      $query = "SELECT * FROM testtable";
       echo '<table>
               <tr>
                 <td><b>Date</b></td>
