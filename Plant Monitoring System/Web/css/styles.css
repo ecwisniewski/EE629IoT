@@ -1,11 +1,72 @@
 body {
-  background: #F1F4B6;
+  background: #f6f7df;
   color: #135088;
 }
 h1 {
+  margin-top: 40px;
   color: #178E5C;
   font-family: 'Amaranth', sans-serif;
 }
-hr {
+h2 {
   color: #2FA7CC;
+  font-family: 'Amaranth', sans-serif;
+}
+hr {
+  border-top: 3px dotted #2FA7CC;
+  width: 50%;
+}
+table, tr, td {
+  border: 1px solid #2FA7CC;
+  border-collapse: collapse;
+}
+td {
+  padding: 5px;
+}
+img {
+  width: 100px;
+}
+img.plant {
+  width: 30px;
+}
+.title {
+  font-size: 1.2rem;
+  margin: auto 30px 20px;
+}
+.plant {
+  padding-top: 30px;
+  display: inline;
+}
+.monitor {
+  position:relative;
+}
+.visual {
+  /*background-color: #178E5C;*/
+  width: 392px;
+  /*margin-left: 100px;*/
+  display:inline-block;
+
+}
+.data {
+  /*background-color: #2FA7CC;*/
+  display: inline-block;
+  /*width: 40%;*/
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 10px;
+}
+.sunlight, .water {
+  padding: 40px 40px 0;
+  /*margin: 30px;*/
+  display: inline-block;
+}
+.temphum {
+  padding: 0 40px 40px;
+  /*margin: 40px;*/
+  margin-left: 25px;
+}
+.temphuminfo {
+  padding-left: 20px;
+  font-size: 1.5rem;
+  position: absolute;
+  display: inline-block;
 }
