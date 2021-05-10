@@ -12,15 +12,20 @@ h2 {
   font-family: 'Amaranth', sans-serif;
 }
 hr {
-  border-top: 3px dotted #2FA7CC;
-  width: 50%;
+  border: none;
+  border-top: 8px dotted #93bbc7;
+  width: 1000px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  height: 0;
 }
 table, tr, td {
   border: 1px solid #2FA7CC;
   border-collapse: collapse;
+ table-layout: fixed;
 }
 td {
-  padding: 5px;
+  padding:5px 8px 5px 8px;
 }
 img {
   width: 100px;
@@ -54,6 +59,10 @@ img.plant {
   margin-top: 40px;
   margin-left: 10px;
 }
+.full-data {
+margin-top: 40px;
+  margin-left: 10px;
+}
 .sunlight, .water {
   padding: 40px 40px 0;
   /*margin: 30px;*/
@@ -69,4 +78,7 @@ img.plant {
   font-size: 1.5rem;
   position: absolute;
   display: inline-block;
+}
+.margin20 {
+ margin-top: 50px;
 }
