@@ -122,11 +122,11 @@
       </div>
       <hr class="margin20" align="left">
       <!-- Display Graphs from Images -->
-      <div class="graphic">
+      <div>
          <img class="graph" src="images/moisture.png" alt="graph moisture data">
          <img class="graph" src="images/light.png" alt="graph moisture data">
       </div>
-      <div class="graphic">
+      <div>
         <img class="graph" src="images/temperature.png" alt="graph moisture data">
         <img class="graph" src="images/humidity.png" alt="graph moisture data">
      </div>
