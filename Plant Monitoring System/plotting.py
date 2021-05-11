@@ -1,5 +1,6 @@
 
 ## Plot
+import os
 import pandas as pd
 #import numpy as np
 from sqlalchemy import create_engine
@@ -11,24 +12,27 @@ df = pd.read_sql(query, mysqli)
 
 # Combine Date and Time Columns
 #df.apply(lambda r: pd.datetime.combine(r['tdate'],r['ttime']).time(),1)
-df['DateTime']=pd.to_datetime(df.pop('tdate'))+pd.to_timedelta(df.pop('ttime'))
+df['Date Time']=pd.to_datetime(df.pop('tdate'))+pd.to_timedelta(df.pop('ttime'))
 
-print(df.head())
+#print(df.head())
+
+# Get Path to HTML
+imgs_path = "/var/www/html/images"
 
 
 # Plots
-plot=df.plot.line(title="Moisture Change Over Time",x='DateTime',y='moisture')
+plot=df.plot.line(title="Moisture Change Over Time(Where >60=Dry)",x='Date Time',y='moisture')
 fig = plot.get_figure()
-fig.savefig("moisture.png")
+fig.savefig(os.path.join(imgs_path,"moisture.png"))
 
-plot = df.plot.line(title="Light Change Over Time",x='DateTime',y='light')
+plot = df.plot.line(title="Light Change Over Time (Where >11=Dark)",x='Date Time',y='light')
 fig = plot.get_figure()
-fig.savefig("light.png")
+fig.savefig(os.path.join(imgs_path,"light.png"))
 
-plot = df.plot.line(title="Temp Change Over Time",x='DateTime',y='temperature')
+plot = df.plot.line(title="Temp Change Over Time (Indoors)",x='Date Time',y='temperature')
 fig = plot.get_figure()
-fig.savefig("temperature.png")
+fig.savefig(os.path.join(imgs_path,"temperature.png"))
 
-plot = df.plot.line(title="Hum Change Over Time",x='DateTime',y='humidity')
+plot = df.plot.line(title="Hum Change Over Time(Indoors)",x='Date Time',y='humidity')
 fig = plot.get_figure()
-fig.savefig("humidity.png")
+fig.savefig(os.path.join(imgs_path,"humidity.png"))
