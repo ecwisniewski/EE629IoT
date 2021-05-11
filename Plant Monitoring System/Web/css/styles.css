@@ -1,37 +1,41 @@
 body {
-  background: #f6f7df;
-  color: #135088;
+  background: #FFFFFF;
+  color: #330000;
 }
 h1 {
   margin-top: 40px;
-  color: #178E5C;
-  font-family: 'Amaranth', sans-serif;
+  color: #330000;
+  font-family: 'Codystar', cursive;
 }
-h2 {
-  color: #2FA7CC;
-  font-family: 'Amaranth', sans-serif;
+h2, h3 {
+  color: #3399CC;
+  font-family: 'Nunito Sans', sans-serif;
 }
 hr {
   border: none;
-  border-top: 8px dotted #93bbc7;
+  border-top: 8px dotted #CDB99C;
   width: 1000px;
   margin-bottom: 0;
   padding-bottom: 0;
   height: 0;
 }
 table, tr, td {
-  border: 1px solid #2FA7CC;
+  border: 1px solid #330000;
   border-collapse: collapse;
  table-layout: fixed;
 }
 td {
   padding:5px 8px 5px 8px;
 }
-img {
+.icons {
   width: 100px;
 }
-img.plant {
+.plant {
   width: 30px;
+}
+.graph {
+  width: 450px;
+  display:inline-block;
 }
 .title {
   font-size: 1.2rem;
@@ -64,9 +68,12 @@ margin-top: 40px;
   margin-left: 10px;
 }
 .sunlight, .water {
-  padding: 40px 40px 0;
+  padding: 40px 0 0 40px;
   /*margin: 30px;*/
   display: inline-block;
+}
+.sunlight {
+ margin-left: 40px;
 }
 .temphum {
   padding: 0 40px 40px;
