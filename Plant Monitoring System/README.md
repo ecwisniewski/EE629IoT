@@ -18,7 +18,9 @@ After this was done and the web server and page were shown as expected, the deci
 
 The script to plot the MySQL database was written using sqlalchemy to access the database and transforming this data into a DataFrame object using Pandas. With the proper permissions, the user on Raspberry Pi can save the plot figures to the /var/www/html folder where the webpage is being run from. So with these images available, one can use HTML to print them to the page.
 
-![Monitor Image](<https://github.com/errski/EE629IoT/blob/main/Plant%20Monitoring%20System/index_php_webpage.jpg>)
+![Monitor Image](<https://github.com/errski/EE629IoT/blob/main/Plant%20Monitoring%20System/index_php_main.jpg>)
+![Data Image](<https://github.com/errski/EE629IoT/blob/main/Plant%20Monitoring%20System/index_php_graphs.jpg>)
+[See Full Here](https://github.com/errski/EE629IoT/blob/main/Plant%20Monitoring%20System/index_php_webpage.jpg)
 
 Displayed is the full main webpage called index.php. To view all the data, a PHP file was made called fulltable.php which displays all of the values collected in the MySQL database.
 
