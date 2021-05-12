@@ -14,15 +14,17 @@ After setting up the sensors, one can create a database to collect the sensor in
 
 Using PHP, the icons change based on the level of brightness or moisture which is determined by a threshold. By doing these calculations in the .php file, it is easier to make changes on the fly and display data where the data input is not regularly changing. The PHP for this is not too complicated and it adds more character to the light and moisture detection of the system. Some CSS was added to include different fonts and give a cute design and display for the webpage. 
 
+![Monitor Image](<https://github.com/errski/EE629IoT/blob/main/Plant%20Monitoring%20System/index_php_main.jpg>)
+
 After this was done and the web server and page were shown as expected, the decision was made to try to print graphs to the webpage of the data from MySQL over time. This can be accomplished with a Python script that will take the MySQL database and plot the data. Since the sensors were reading fundamentally different values, it seemed like the best idea was to create a separate plot for each column. 
 
 The script to plot the MySQL database was written using sqlalchemy to access the database and transforming this data into a DataFrame object using Pandas. With the proper permissions, the user on Raspberry Pi can save the plot figures to the /var/www/html folder where the webpage is being run from. So with these images available, one can use HTML to print them to the page.
 
-![Monitor Image](<https://github.com/errski/EE629IoT/blob/main/Plant%20Monitoring%20System/index_php_main.jpg>)
 ![Data Image](<https://github.com/errski/EE629IoT/blob/main/Plant%20Monitoring%20System/index_php_graphs.jpg>)
+
 [See Full Here](https://github.com/errski/EE629IoT/blob/main/Plant%20Monitoring%20System/index_php_webpage.jpg)
 
-Displayed is the full main webpage called index.php. To view all the data, a PHP file was made called fulltable.php which displays all of the values collected in the MySQL database.
+Displayed is the webpage called index.php. To view all the data, a PHP file was made called fulltable.php which displays all of the values collected in the MySQL database.
 
 The final part of this project involves data collection and how to make sure the database is being updated, and scheduling tasks to run on the Raspberry Pi. To achieve this one can use Cron to schedule the tasks on the Raspberry Pi. The script is scheduled to run 4x a day at specific times to get a range of what the sunlight during the day might be like and collect the moisture reading at least once per day.
 
