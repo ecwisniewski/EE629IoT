@@ -18,13 +18,13 @@ After this was done and the web server and page were shown as expected, the deci
 
 The script to plot the MySQL database was written using sqlalchemy to access the database and transforming this data into a DataFrame object using Pandas. With the proper permissions, the user on Raspberry Pi can save the plot figures to the /var/www/html folder where the webpage is being run from. So with these images available, one can use HTML to print them to the page.
 
-![Plant Monitor Page](<https://github.com/errski/EE629IoT/edit/main/Plant Monitoring System/index_php_webpage.jpg>)
+![Monitor Image](<https://github.com/errski/EE629IoT/blob/main/Plant%20Monitoring%20System/index_php_webpage.jpg>)
 
 Displayed is the full main webpage called index.php. To view all the data, a PHP file was made called fulltable.php which displays all of the values collected in the MySQL database.
 
 The final part of this project involves data collection and how to make sure the database is being updated, and scheduling tasks to run on the Raspberry Pi. To achieve this one can use Cron to schedule the tasks on the Raspberry Pi. The script is scheduled to run 4x a day at specific times to get a range of what the sunlight during the day might be like and collect the moisture reading at least once per day.
 
-![Using Cron](<https://github.com/errski/EE629IoT/edit/main/Plant Monitoring System/cron_scheduler.jpg>)
+![Using Cron Image](<https://github.com/errski/EE629IoT/blob/main/Plant%20Monitoring%20System/cron_scheduler.jpg>)
 
 For this project, it's possible that 4x a day is not enough data for light, but this can be managed through Cron easily. Another upgrade would be running the plotting.py script more than once a day or after the sched_sensors.py script runs. 
 
