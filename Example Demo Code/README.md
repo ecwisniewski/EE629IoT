@@ -1,4 +1,4 @@
-# Internet Demos found for Raspberry Pi
+# Internet Demos For Raspberry Pi (That I Tried)
 
 ### 1. Bluetooth Demos
 [Link to Demo](https://circuitdigest.com/microcontroller-projects/controlling-raspberry-pi-gpio-using-android-app-over-bluetooth)
