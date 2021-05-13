@@ -1,11 +1,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Plant Monitoring Data</title>
+    <title>Plant Monitoring System</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Amaranth&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Codystar&family=Nunito+Sans&family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">  
   </head>
   <body>
     <?php
