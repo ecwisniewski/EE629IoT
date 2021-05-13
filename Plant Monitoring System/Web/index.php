@@ -13,7 +13,7 @@
       // Threshold Values
       $light_thresh_1 = 7;
       $light_thresh_2 = 12;
-      $moisture_thresh_1 = 50;
+      $moisture_thresh_1 = 57;
       $moisture_thresh_2 = 62;
 
       $username = "pi";
@@ -35,7 +35,7 @@
     <!-- Title Div -->
     <div class="title">
       <img class="plant" src="images/plant.png" alt="plant image">
-      <h1 class="plant">Plant Monitoring System (EE629-Spring 2021)</h1>
+      <h1 class="plant">Plant Monitoring System</h1>
       <img class="plant" src="images/plant.png" alt="plant image">
     </div>
     <hr align="left">
@@ -47,13 +47,13 @@
           <!-- Display icon dependant on brightness-->
           <?php
             if($displight >$light_thresh_2) {
-              echo '<img src="images/brightday3.png" alt="brightness indicator image">';
+              echo '<img class="icons" src="images/brightday3.png" alt="brightness indicator image">';
             }
             elseif($displight > $light_thresh_1) {
-              echo '<img src="images/brightday2.png" alt="brightness indicator image">';
+              echo '<img class="icons" src="images/brightday2.png" alt="brightness indicator image">';
             }
             else {
-              echo '<img src="images/brightday1.png" alt="brightness indicator image">';
+              echo '<img class="icons" src="images/brightday1.png" alt="brightness indicator image">';
             }
           ?>
         </div>
@@ -62,20 +62,20 @@
             <!-- Display icon dependant on moisture-->
             <?php
               if($dispmoisture >$moisture_thresh_2) {
-                echo '<img src="images/water3.png" alt="water indicator image">';
+                echo '<img class="icons" src="images/water3.png" alt="water indicator image">';
               }
               elseif($dispmoisture > $moisture_thresh_1) {
-                echo '<img src="images/water2.png" alt="water indicator image">';
+                echo '<img class="icons" src="images/water2.png" alt="water indicator image">';
               }
               else {
-                echo '<img src="images/water1.png" alt="water indicator image">';
+                echo '<img class="icons" src="images/water1.png" alt="water indicator image">';
               }
             ?>
         </div>
         <br>
         <div class="temphum">
           <h2>Temperature and Humidity</h2>
-          <img src="images/temp.png" alt="temp indicator image">
+          <img class="icons" src="images/temp.png" alt="temp indicator image">
           <div class="temphuminfo">
             <!-- Print Temperature and Humidity-->
             <?php
