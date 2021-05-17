@@ -23,7 +23,9 @@ The script to plot the MySQL database was written using sqlalchemy to access the
 ![Data Image](<https://github.com/errski/EE629IoT/blob/main/Plant%20Monitoring%20System/index_php_graphs.jpg>)
 
 [See Full Here](https://github.com/errski/EE629IoT/blob/main/Plant%20Monitoring%20System/index_php_webpage.jpg)
+
 [See Full Here - May 17](https://github.com/errski/EE629IoT/blob/main/Plant%20Monitoring%20System/index_php_webpage_may_17.jpg)
+
 [See Full Table Data - May 17](https://github.com/errski/EE629IoT/blob/main/Plant%20Monitoring%20System/fulltable_php_output.jpg)
 
 Displayed is the webpage called index.php. To view all the data, a PHP file was made called fulltable.php which displays all of the values collected in the MySQL database.
